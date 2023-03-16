@@ -1,0 +1,57 @@
+.game {
+    width: 600px;
+    height: 300px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+#dino {
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/andr.jpg);
+    background-size: 100px 100px;
+    position: relative;
+    top: 200px;
+}
+
+#cactus {
+    width: 60px;
+    height: 80px;
+    background-image: url(./img/but.jpg);
+    background-size: 60px 80px;
+    position: relative;
+    top: 120px;
+    left: 550px;
+    animation: cactusMove 1.3s infinite linear;
+}
+
+@keyframes cactusMove {
+    0% {
+        left: 550px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 200px;
+    }
+    30% {
+        top: 85px;
+    }
+    50% {
+        top: 20px;
+    }
+    80% {
+        top: 85px;
+    }
+    100% {
+        top: 200px;
+    }
+}
